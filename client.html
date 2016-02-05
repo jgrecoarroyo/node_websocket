@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example snippet - client websocket</title>
+    <style>
+    html, body {padding: 10px; margin: 10px;}
+    </style>
+  </head>
+  <body>
+
+    <input type="text" value="" id="inputForm">
+    <input type="button" value="send" onclick="sendMessage()">
+
+    <div id="showMessage"></div>
+
+
+    <script type="text/javascript">
+      // we establish connection with websocket-node server
+      var ws = new WebSocket('ws://localhost:3333', 'echo-protocol');
+
+      // send message to websocket-node server
+      function sendMessage(){
+          var tx_msg = document.getElementById('inputForm').value;
+          console.log("tx: " + tx_msg);
+          ws.send(tx_msg);
+      }
+
+      // when an event occurs, we append the message on the div
+      ws.addEventListener("message", function(e) {
+          // The data is simply the message that we're sending back
+          var rx_msg = e.data;
+          // Append the message
+          document.getElementById('showMessage').innerHTML += '<br>' + rx_msg;
+          console.log("rx: " + rx_msg);
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "node_websocket",
+  "version": "1.0",
+  "description": "Simple code snippet example using websockets with node",
+  "keywords": ["node", "websockets", "example", "snippet"],
+  "license" : "MIT - SEE LICENSE FILE",
+  "author":
+    {
+      "name": "Juan Greco",
+      "email": "jgrecoarroyo@gmail.com",
+      "web": "https://github.com/jgrecoarroyo/node_websocket"
+    },
+  "repository" :
+    {
+      "type" : "git",
+      "url" : "https://github.com/jgrecoarroyo/node_websocket"
+    },
+  "private": false,
+  "scripts":
+    {
+      "start": "node ./server.js"
+    },
+  "dependencies":
+    {
+      "http": "0.0.0",
+      "websocket": "^1.0.22"
+    }
+}
