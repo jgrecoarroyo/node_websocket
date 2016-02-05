@@ -1,9 +1,9 @@
 {
   "name": "node_websocket",
-  "version": "1.0",
+  "version": "0.0.1",
   "description": "Simple code snippet example using websockets with node",
   "keywords": ["node", "websockets", "example", "snippet"],
-  "license" : "MIT - SEE LICENSE FILE",
+  "license" : "SEE LICENSE IN LICENSE FILE",
   "author":
     {
       "name": "Juan Greco",
