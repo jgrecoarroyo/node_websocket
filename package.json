@@ -18,7 +18,7 @@
   "private": false,
   "scripts":
     {
-      "start": "node ./server.js"
+      "start": "node ./bin/server.js"
     },
   "dependencies":
     {
