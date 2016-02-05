@@ -2,8 +2,7 @@
 Easy example to get started on using websockets with node.
 
 Simple client and server communication, with a chat example.
-![client1](img/client1.png) ![client0](img/client0.png)
-![console](img/console.png)
+![client1](img/clientsNserver.png)
 
 ## Installation
 1. Clone the project repository: ``` git clone https://github.com/jgrecoarroyo/node_websocket.git```
