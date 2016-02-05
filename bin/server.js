@@ -2,8 +2,9 @@ var http = require('http');
 
 // Create simple server
 var server = http.createServer(function(request, response) {});
-server.listen(3333, function() {
-    console.log((new Date()) + ' Server is listening on port 8080');
+var port = 3333;
+server.listen(port, function() {
+    console.log((new Date()) + ' Server is listening on port ' + port);
 });
 
 // Create web socker server
